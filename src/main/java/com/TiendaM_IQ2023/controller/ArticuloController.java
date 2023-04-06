@@ -19,7 +19,7 @@ public class ArticuloController {
     @Autowired
     CategoriaService categoriaService;
 
-    @GetMapping("/articulo/listado")
+@GetMapping("/articulo/listado")
     public String inicio(Model model) {
 
         var articulos = articuloService.getArticulos(false);
